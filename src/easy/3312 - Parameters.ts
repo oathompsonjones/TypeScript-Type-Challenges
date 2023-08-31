@@ -1,21 +1,21 @@
 /*
-  3312 - Parameters
-  -------
-  by midorizemi (@midorizemi) #easy #infer #tuple #built-in
+    3312 - Parameters
+    -------
+    by midorizemi (@midorizemi) #easy #infer #tuple #built-in
 
-  ### Question
+    ### Question
 
-  Implement the built-in Parameters<T> generic without using it.
+    Implement the built-in Parameters<T> generic without using it.
 
-  For example:
+    For example:
 
-  ```ts
-  const foo = (arg1: string, arg2: number): void => {}
+    ```ts
+    const foo = (arg1: string, arg2: number): void => {}
 
-  type FunctionParamsType = MyParameters<typeof foo> // [arg1: string, arg2: number]
-  ```
+    type FunctionParamsType = MyParameters<typeof foo> // [arg1: string, arg2: number]
+    ```
 
-  > View on GitHub: https://tsch.js.org/3312
+    > View on GitHub: https://tsch.js.org/3312
 */
 
 /* _____________ Your Code Here _____________ */
@@ -45,7 +45,7 @@ export type Cases = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/3312/answer
-  > View solutions: https://tsch.js.org/3312/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/3312/answer
+    > View solutions: https://tsch.js.org/3312/solutions
+    > More Challenges: https://tsch.js.org
 */

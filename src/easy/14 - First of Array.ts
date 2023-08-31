@@ -1,28 +1,30 @@
 /*
-  14 - First of Array
-  -------
-  by Anthony Fu (@antfu) #easy #array
+    14 - First of Array
+    -------
+    by Anthony Fu (@antfu) #easy #array
 
-  ### Question
+    ### Question
 
-  Implement a generic `First<T>` that takes an Array `T` and returns its first element's type.
+    Implement a generic `First<T>` that takes an Array `T` and returns its first element's type.
 
-  For example:
+    For example:
 
-  ```ts
-  type arr1 = ['a', 'b', 'c']
-  type arr2 = [3, 2, 1]
+    ```ts
+    type arr1 = ['a', 'b', 'c']
+    type arr2 = [3, 2, 1]
 
-  type head1 = First<arr1> // expected to be 'a'
-  type head2 = First<arr2> // expected to be 3
-  ```
+    type head1 = First<arr1> // expected to be 'a'
+    type head2 = First<arr2> // expected to be 3
+    ```
 
-  > View on GitHub: https://tsch.js.org/14
+    > View on GitHub: https://tsch.js.org/14
 */
 
 /* _____________ Your Code Here _____________ */
 
-type First<T extends unknown[]> = T extends [infer P, ...unknown[]] ? P : never;
+type First<T extends unknown[]> = T extends [infer P, ...unknown[]]
+    ? P
+    : never;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
@@ -44,7 +46,7 @@ export type Errors = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/14/answer
-  > View solutions: https://tsch.js.org/14/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/14/answer
+    > View solutions: https://tsch.js.org/14/solutions
+    > More Challenges: https://tsch.js.org
 */

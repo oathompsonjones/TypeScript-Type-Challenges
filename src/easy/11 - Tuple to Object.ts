@@ -1,26 +1,26 @@
 /*
-  11 - Tuple to Object
-  -------
-  by sinoon (@sinoon) #easy #object-keys
+    11 - Tuple to Object
+    -------
+    by sinoon (@sinoon) #easy #object-keys
 
-  ### Question
+    ### Question
 
-  Given an array, transform it into an object type and the key/value must be in the provided array.
+    Given an array, transform it into an object type and the key/value must be in the provided array.
 
-  For example:
+    For example:
 
-  ```ts
-  const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
+    ```ts
+    const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 
-  type result = TupleToObject<typeof tuple> // expected {
-    'tesla': 'tesla',
-    'model 3': 'model 3',
-    'model X': 'model X',
-    'model Y': 'model Y'
-  }
-  ```
+    type result = TupleToObject<typeof tuple> // expected {
+      'tesla': 'tesla',
+      'model 3': 'model 3',
+      'model X': 'model X',
+      'model Y': 'model Y'
+    }
+    ```
 
-  > View on GitHub: https://tsch.js.org/11
+    > View on GitHub: https://tsch.js.org/11
 */
 
 /* _____________ Your Code Here _____________ */
@@ -54,7 +54,7 @@ export type Error = TupleToObject<[[1, 2], {}]>;
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/11/answer
-  > View solutions: https://tsch.js.org/11/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/11/answer
+    > View solutions: https://tsch.js.org/11/solutions
+    > More Challenges: https://tsch.js.org
 */

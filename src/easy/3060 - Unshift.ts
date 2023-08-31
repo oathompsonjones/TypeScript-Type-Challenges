@@ -1,19 +1,19 @@
 /*
-  3060 - Unshift
-  -------
-  by jiangshan (@jiangshanmeta) #easy #array
+    3060 - Unshift
+    -------
+    by jiangshan (@jiangshanmeta) #easy #array
 
-  ### Question
+    ### Question
 
-  Implement the type version of ```Array.unshift```
+    Implement the type version of ```Array.unshift```
 
-  For example:
+    For example:
 
-  ```typescript
-  type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
-  ```
+    ```typescript
+    type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
+    ```
 
-  > View on GitHub: https://tsch.js.org/3060
+    > View on GitHub: https://tsch.js.org/3060
 */
 
 /* _____________ Your Code Here _____________ */
@@ -31,7 +31,7 @@ export type Cases = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/3060/answer
-  > View solutions: https://tsch.js.org/3060/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/3060/answer
+    > View solutions: https://tsch.js.org/3060/solutions
+    > More Challenges: https://tsch.js.org
 */

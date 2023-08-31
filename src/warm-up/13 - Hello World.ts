@@ -1,29 +1,29 @@
 /*
-  13 - Hello World
-  -------
-  by Anthony Fu (@antfu) #warm-up
+    13 - Hello World
+    -------
+    by Anthony Fu (@antfu) #warm-up
 
-  ### Question
+    ### Question
 
-  Hello, World!
+    Hello, World!
 
-  In Type Challenges, we use the type system itself to do the assertion.
+    In Type Challenges, we use the type system itself to do the assertion.
 
-  For this challenge, you will need to change the following code to make the tests pass (no type check errors).
+    For this challenge, you will need to change the following code to make the tests pass (no type check errors).
 
-  ```ts
-  // expected to be string
-  type HelloWorld = any
-  ```
+    ```ts
+    // expected to be string
+    type HelloWorld = any
+    ```
 
-  ```ts
-  // you should make this work
-  type test = Expect<Equal<HelloWorld, string>>
-  ```
+    ```ts
+    // you should make this work
+    type test = Expect<Equal<HelloWorld, string>>
+    ```
 
-  Click the `Take the Challenge` button to start coding! Happy Hacking!
+    Click the `Take the Challenge` button to start coding! Happy Hacking!
 
-  > View on GitHub: https://tsch.js.org/13
+    > View on GitHub: https://tsch.js.org/13
 */
 
 /* _____________ Your Code Here _____________ */
@@ -40,7 +40,7 @@ export type Cases = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/13/answer
-  > View solutions: https://tsch.js.org/13/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/13/answer
+    > View solutions: https://tsch.js.org/13/solutions
+    > More Challenges: https://tsch.js.org
 */

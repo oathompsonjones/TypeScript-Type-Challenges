@@ -1,21 +1,21 @@
 /*
-  43 - Exclude
-  -------
-  by Zheeeng (@zheeeng) #easy #built-in #union
+    43 - Exclude
+    -------
+    by Zheeeng (@zheeeng) #easy #built-in #union
 
-  ### Question
+    ### Question
 
-  Implement the built-in `Exclude<T, U>`
+    Implement the built-in `Exclude<T, U>`
 
-  > Exclude from `T` those types that are assignable to `U`
+    > Exclude from `T` those types that are assignable to `U`
 
-  For example:
+    For example:
 
-  ```ts
-  type Result = MyExclude<'a' | 'b' | 'c', 'a'> // 'b' | 'c'
-  ```
+    ```ts
+    type Result = MyExclude<'a' | 'b' | 'c', 'a'> // 'b' | 'c'
+    ```
 
-  > View on GitHub: https://tsch.js.org/43
+    > View on GitHub: https://tsch.js.org/43
 */
 
 /* _____________ Your Code Here _____________ */
@@ -34,7 +34,7 @@ export type Cases = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/43/answer
-  > View solutions: https://tsch.js.org/43/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/43/answer
+    > View solutions: https://tsch.js.org/43/solutions
+    > More Challenges: https://tsch.js.org
 */

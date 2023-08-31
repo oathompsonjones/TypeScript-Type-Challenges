@@ -1,19 +1,19 @@
 /*
-  3057 - Push
-  -------
-  by jiangshan (@jiangshanmeta) #easy #array
+    3057 - Push
+    -------
+    by jiangshan (@jiangshanmeta) #easy #array
 
-  ### Question
+    ### Question
 
-  Implement the generic version of ```Array.push```
+    Implement the generic version of ```Array.push```
 
-  For example:
+    For example:
 
-  ```typescript
-  type Result = Push<[1, 2], '3'> // [1, 2, '3']
-  ```
+    ```typescript
+    type Result = Push<[1, 2], '3'> // [1, 2, '3']
+    ```
 
-  > View on GitHub: https://tsch.js.org/3057
+    > View on GitHub: https://tsch.js.org/3057
 */
 
 /* _____________ Your Code Here _____________ */
@@ -31,7 +31,7 @@ export type Cases = [
 
 /* _____________ Further Steps _____________ */
 /*
-  > Share your solutions: https://tsch.js.org/3057/answer
-  > View solutions: https://tsch.js.org/3057/solutions
-  > More Challenges: https://tsch.js.org
+    > Share your solutions: https://tsch.js.org/3057/answer
+    > View solutions: https://tsch.js.org/3057/solutions
+    > More Challenges: https://tsch.js.org
 */
