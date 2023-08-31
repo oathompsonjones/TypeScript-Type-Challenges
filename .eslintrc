@@ -1,0 +1,6 @@
+{
+    "extends": "@oathompsonjones/eslint-config",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+}
