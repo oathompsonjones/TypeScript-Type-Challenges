@@ -22,9 +22,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type First<T extends unknown[]> = T extends [infer P, ...unknown[]]
-    ? P
-    : never;
+type First<T extends unknown[]> = T extends [infer P, ...unknown[]] ? P : never;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
