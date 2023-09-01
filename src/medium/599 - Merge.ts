@@ -28,7 +28,7 @@
 /* _____________ Your Code Here _____________ */
 
 type Merge<F, S> = {
-    [K in keyof F | keyof S]: K extends keyof S
+    [K in keyof (F & S)]: K extends keyof S
         ? S[K]
         : K extends keyof F
             ? F[K]
