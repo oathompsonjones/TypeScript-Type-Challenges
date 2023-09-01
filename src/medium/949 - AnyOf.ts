@@ -20,12 +20,9 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Falsy = Record<PropertyKey, never> | "" | 0 | false | [] | null | undefined;
-type AnyOf<T extends readonly unknown[]> = T extends [infer First, ...infer Rest]
-    ? First extends Falsy
-        ? AnyOf<Rest>
-        : true
-    : false;
+type AnyOf<T extends readonly unknown[]> = T[number] extends Record<PropertyKey, never> | "" | 0 | false | [] | null | undefined
+    ? false
+    : true;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
