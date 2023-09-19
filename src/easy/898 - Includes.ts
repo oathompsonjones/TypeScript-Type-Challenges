@@ -20,8 +20,7 @@
 /* _____________ Your Code Here _____________ */
 
 type Includes<T extends readonly unknown[], U> = T extends [infer Head, ...infer Tail]
-    // I really don't like using the provided `Equal` type here
-    ? Equal<Head, U> extends true
+    ? (<A>() => A extends Head ? 1 : 2) extends (<A>() => A extends U ? 1 : 2)
         ? true
         : Includes<Tail, U>
     : false;
