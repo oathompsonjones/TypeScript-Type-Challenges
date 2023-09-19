@@ -27,8 +27,6 @@ type AllCombinations<S extends string, T extends string = StrToUnion<S>> = [T] e
     ? ""
     : { [K in T]: `${K}${AllCombinations<T extends K ? never : T>}` }[T] | "";
 
-type Test = AllCombinations<"AB">;
-
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from "@type-challenges/utils";
 
