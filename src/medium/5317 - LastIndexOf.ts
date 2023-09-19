@@ -21,9 +21,9 @@
 /* _____________ Your Code Here _____________ */
 
 type LastIndexOf<T extends unknown[], U, I extends unknown[] = [], LastI extends number = -1> = T extends [infer L, ...infer R]
-    ? (<A>() => A extends U ? 1 : 2) extends (<A>() => A extends L ? 1 : 2)
-        ? LastIndexOf<R, U, [unknown, ...I], I["length"]>
-        : LastIndexOf<R, U, [unknown, ...I], LastI>
+    ? LastIndexOf<R, U, [unknown, ...I], (<A>() => A extends U ? 1 : 2) extends (<A>() => A extends L ? 1 : 2)
+        ? I["length"]
+        : LastI>
     : LastI;
 
 /* _____________ Test Cases _____________ */
