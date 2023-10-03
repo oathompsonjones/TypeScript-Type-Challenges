@@ -24,7 +24,7 @@ type Carry<N> = N extends number
             : never
     : never;
 type AddDigits<N extends Digit, M extends Digit, C extends Digit = 0> = Carry<[...Tuple<N>, ...Tuple<M>, ...Tuple<C>]["length"]>;
-type SplitNumber<N extends number | string> = `${N}` extends `${infer X extends Digit}${infer Y}`
+export type SplitNumber<N extends number | string> = `${N}` extends `${infer X extends Digit}${infer Y}`
     ? [X, ...SplitNumber<Y>]
     : `${N}` extends `${infer X extends Digit}`
         ? [X]
@@ -33,7 +33,7 @@ type ParseInt<N extends string> = N extends `${infer X extends number}` ? X : ne
 type JoinNumberHelper<N> = N extends [infer X extends Digit, ...infer XS extends Digit[]]
     ? `${X}${JoinNumberHelper<XS>}`
     : "";
-type JoinNumber<N extends Digit[]> = ParseInt<JoinNumberHelper<N>>;
+export type JoinNumber<N extends Digit[]> = ParseInt<JoinNumberHelper<N>>;
 type PadList<L extends unknown[], N extends number, P = 0, I extends unknown[] = []> = I["length"] extends N
     ? L
     : L[I["length"]] extends undefined
@@ -55,7 +55,7 @@ type AddListsHelper<
             : []
         : []
     : [];
-type AddLists<A extends number[], B extends number[]> = DePadList<AddListsHelper<[0, ...A], [0, ...B]>>;
+export type AddLists<A extends number[], B extends number[]> = DePadList<AddListsHelper<[0, ...A], [0, ...B]>>;
 type AddListXTimes<A extends number[], X extends number, O extends number[] = A, I extends unknown[] = [unknown]> = X extends 0
     ? [0]
     : I["length"] extends X
