@@ -21,8 +21,8 @@
         "@oathompsonjones/eslint-config": "^0.0.65",
         "@oathompsonjones/ts-config": "^0.0.25",
         "@total-typescript/ts-reset": "^0.5.1",
-        "@types/node": "^20.5.7",
-        "eslint": "^8.48.0",
+        "@types/node": "^20.8.2",
+        "eslint": "^8.50.0",
         "typescript": "^5.2.2"
     },
     "dependencies": {
