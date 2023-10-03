@@ -27,7 +27,6 @@ import type { Equal, Expect } from "@type-challenges/utils";
 
 export type Cases = [
     Expect<Equal<GetRequired<{ foo: number; bar?: string; }>, { foo: number; }>>,
-    // @ts-expect-error This will error when exactOptionalPropertyTypes is true
     Expect<Equal<GetRequired<{ foo: undefined; bar?: undefined; }>, { foo: undefined; }>>
 ];
 
