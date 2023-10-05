@@ -26,7 +26,7 @@ type IsLetter<T extends string> = T extends `${infer F}${infer R}`
             : true
         : false
     : false;
-type CamelCase<S extends string> = S extends `${infer F}_${infer C}${infer R}`
+export type CamelCase<S extends string> = S extends `${infer F}_${infer C}${infer R}`
     ? IsLetter<C> extends false
         ? `${Lowercase<F>}_${CamelCase<`${C}${R}`>}`
         : `${Lowercase<F>}${Capitalize<C>}${CamelCase<R>}`
