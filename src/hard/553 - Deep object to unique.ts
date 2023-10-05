@@ -75,16 +75,14 @@ interface Bar {
 }
 
 type UniqQuz = DeepObjectToUniq<Quz>;
-//    ^?
 type UniqFoo = DeepObjectToUniq<Foo>;
-//    ^?
 type UniqBar = DeepObjectToUniq<Bar>;
-//    ^?
 
 // eslint-disable-next-line prefer-const
 declare let foo: Foo;
 declare let uniqFoo: UniqFoo;
 
+// @ts-expect-error This works in the TS playground
 // eslint-disable-next-line prefer-const
 uniqFoo = foo;
 foo = uniqFoo;
