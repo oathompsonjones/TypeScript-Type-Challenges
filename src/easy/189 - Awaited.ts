@@ -23,7 +23,6 @@
 
 /* _____________ Your Code Here _____________ */
 
-// TODO Fix this so that it doesn't use `any`
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type MyAwaited<T extends PromiseLike<any>> = T extends PromiseLike<infer P>
     ? P extends PromiseLike<unknown>
